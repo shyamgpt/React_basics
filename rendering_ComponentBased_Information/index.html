@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id ="root">
+
+
+    </div>
+
+    <script type = "text/babel">
+
+        function app(){
+            
+            let cars = [
+            {
+                name: BMW,
+                average: 20,
+                Sno: 1
+            },
+
+            {
+                name: audi,
+                average: 30,
+                Sno: 2
+            },
+
+            {
+                name: wagnor,
+                average: 40,
+                Sn0: 3
+            }];
+
+            return(
+                <>
+                <h1>Cars Details</h1>
+                <table className = "tab">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>average</th>
+                            </tr>
+                        </thead>
+
+                        {cars.map((car, index) =>(
+                            <tr key = {index}>
+                                <td>{car.sn0}</td>
+                                <td>{car.name}</td>
+                                <td>{car.average}</td>
+                                </tr>
+                        ))}
+
+                       
+                    </table>
+                </>
+            )
+        }
+
+        ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+    </script>
+    
+</body>
+</html>
+
