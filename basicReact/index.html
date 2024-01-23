@@ -17,40 +17,14 @@
         <script  type="text/babel">
 
 
-//With normal function -->
-// function App(){
-//         return(
-//         <>
-//         <h1>React Projects</h1>
-//         <p> Skills used to make this project</p>
-//         <ol>
-//         <li>HTML</li>
-//         <li>javaScript</li>
-//         <li>CSS</li>
-//           </ol>
-//          </>
-//         )
-//         }
-
-// With Arrow function -->
-//when {}, is not present then, arrow function will return without return keyword
-// and if {}. is present then you have to write 'retun keyword' for returning something, see Eg-2-->
 
 
-// const App =() => (
-//         <>
-//         <h1>React Projects</h1>
-//         <p> Skills used to make this project</p>
-//         <ol>
-//         <li>HTML</li>
-//         <li>javaScript</li>
-//         <li>CSS</li>
-//           </ol>
-//          </>
-//         )
-
-
-// Eg-2 -->
+//Rendering mutltiple component -->
+          function Name(){
+            return(
+                <p>JSX is javscript Xml</p>
+            )
+          }
 
 const App =() => {
     return(
@@ -65,9 +39,9 @@ const App =() => {
          </>
         )}
         
-
-
-        ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+        // How to render multiple component -->
+        ReactDOM.createRoot(document.getElementById("root")).render(<><App/><Name
+        /></>);
 
     </script>
 </body>
