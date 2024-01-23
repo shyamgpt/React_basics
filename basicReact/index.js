@@ -12,8 +12,9 @@
 
 const reactHeading = React.createElement("h1", {className : "head", id:"reactHead",
  children: "Hello wolrd!"});
-// console.log("React element", reactHeading);
+
 ReactDOM.createRoot(document.getElementById("root")).render(reactHeading);
+
 
 /**React with JSX */
 
@@ -28,6 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(reactHeading);
 // </React.Fragment>
 // ReactDOM.createRoot(document.getElementById("root")).render(jsxHeading);  
 
+
+//Functional Components -->
 function App(){
     return(
         <>
